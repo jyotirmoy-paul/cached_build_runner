@@ -1,6 +1,6 @@
 name: cached_build_runner
 description: Optimizes the build_runner by caching generated codes for non changed .dart files
-version: 0.1.0-pre3
+version: 0.1.1
 homepage: https://github.com/jyotirmoy-paul/cached_build_runner
 maintainer: Jyotirmoy Paul (@jyotirmoy-paul)
 
@@ -9,16 +9,16 @@ environment:
 
 dependencies:
   ansicolor: ^2.0.2
-  args: ^2.4.0
+  args: ^2.5.0
   barbecue: ^0.5.0
-  crypto: ^3.0.1
-  get_it: ^7.6.7
+  crypto: ^3.0.3
+  get_it: ^7.7.0
   hive: ^2.2.3
-  logger: ^1.1.0
-  meta: ^1.11.0
-  path: ^1.8.2
-  synchronized: ^3.0.1
+  logger: ^2.2.0
+  meta: ^1.14.0
+  path: ^1.9.0
+  synchronized: ^3.1.0+1
   text_table: ^4.0.3
 
 dev_dependencies:
-  netglade_analysis: ^7.0.0
+  netglade_analysis: ^10.0.0

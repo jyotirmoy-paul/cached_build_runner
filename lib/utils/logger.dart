@@ -27,7 +27,7 @@ class Logger {
   /// If [showPrefix] is `true`, the message will be prefixed with a vertical bar.
   static void v(String message, {bool showPrefix = true}) {
     // ignore: avoid-non-ascii-symbols, ascii here is ok.
-    _logger.v('${showPrefix ? '│ ' : ''}$message');
+    _logger.t('${showPrefix ? '│ ' : ''}$message');
   }
 
   /// Logs a debug message.
@@ -58,10 +58,10 @@ class _LogFilter extends logger.LogFilter {
   bool shouldLog(logger.LogEvent event) {
     if (event.level == logger.Level.error) return true;
 
-    if (event.level == logger.Level.verbose && Utils.isVerbose) return true;
+    if (event.level == logger.Level.trace && Utils.isVerbose) return true;
 
     if (event.level == logger.Level.debug && Utils.isDebug) return true;
 
-    return event.level != logger.Level.verbose && event.level != logger.Level.debug;
+    return event.level != logger.Level.trace && event.level != logger.Level.debug;
   }
 }

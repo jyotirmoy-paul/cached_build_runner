@@ -9,3 +9,6 @@ build/
 # https://dart.dev/guides/libraries/private-files#pubspeclock.
 pubspec.lock
 .fvm/flutter_sdk
+
+# IDE files.
+.idea/
